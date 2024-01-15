@@ -1,11 +1,9 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.model.dto;
 
 public abstract class Trash {
+    public static final String FONT_RED = "\u001B[31m";
+    public static final String FONT_BLUE = "\u001B[34m";
+    public static final String RESET = "\u001B[0m";
     private String name;
     private int score;
 
@@ -18,14 +16,15 @@ public abstract class Trash {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public int getScore() {
-        return this.score;
+        return score;
     }
 
     public abstract void successed();
 
     public abstract void failed();
+
 }
